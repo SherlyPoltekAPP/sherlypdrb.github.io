@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Sherly Oktaviana">
+<meta name="dcterms.date" content="2023-12-30">
+
+<title>Analisis Pengaruh Ekspor Impor terhadap PDRB Jawa Barat 2013-2022</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/quarto.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="index_files/libs/quarto-html/anchor.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+<script src="index_files/libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="index_files/libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Analisis Pengaruh Ekspor Impor terhadap PDRB Jawa Barat 2013-2022</h1>
+<p class="subtitle lead">Metode Penelitian Politeknik APP Jakarta</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Sherly Oktaviana </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 30, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<p><img src="poltekapp.jpg" class="img-fluid"></p>
+<section id="pendahuluan" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="pendahuluan"><span class="header-section-number">1</span> Pendahuluan</h2>
+<section id="latar-belakang" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="latar-belakang"><span class="header-section-number">1.1</span> Latar belakang</h3>
+<p>Pertumbuhan ekonomi adalah proses meningkatnya kegiatan perekonomian sehingga produksi barang dan jasa bertambah. Menurut Simon Kuznets dalam Todaro (2000) mendefinisikan pertumbuhan ekonomi adalah kenaikan kapasitas dalam jangka panjang dari suatu negara untuk menyediakan berbagai barang ekonomi kepada penduduknya. Tolak ukur kemajuan suatu daerah adalah dengan meningkatnya pertumbuhan ekonomi didaerah tersebut. Meningkatnya pertumbuhan ekonomi dapat dilihat dari jumlah produksi barang dan jasa yang akan meningkatkan pendapatan didaerah tersebut. Dengan adanya keinginan setiap daerah untuk memiliki pertumbuhan ekonomi yang pesat, maka setiap daerah melakukan kegiatan jual beli dengan daerah lain, salah satunya melalui kegiatan ekspor dan impor yang dilakukan dengan negara lain.</p>
+<p>Tujuan dari dilakukannya kegiatan ekspor dan impor adalah guna untuk meningkatkan pendapatan daerah tersebut dan juga memenuhi kebutuhan daerah. Adanya kegiatan ekspor (jual) dan impor (beli) didaerah tersebut maka akan memberikan pengaruh terhadap pertumbuhan ekonomi, karena baik ekspor maupun impor keduanya sama-sama memberikan efek dan berperan terhadap kegiatan ekonomi yang akan berpengaruh pada pertumbuhan ekonomi. Menurut Mankiw (2006:76) PDRB adalah nilai pasar semua barang dan jasa akhir yang diproduksi dalam perekonomian selama kurun waktu tertentu. Pertumbuhan ekonomi dapat dilihat dari Produk Domestik Regional Bruto (PDRB), dimana PDRB ini menggambarkan kondisi atau kemampuan suatu daerah dalam mengelola sumber daya untuk menciptakan nilai tambah.</p>
+<p>Jawa Barat adalah salah satu provinsi pulau Jawa yang memiliki sumber daya yang dimanfaatkan untuk dijual atau ekspor, tetapi juga bukan hanya menjual atau mengekspor tetapi juga melakukan kegiatan pembelian atau impor dari negara lain, ditambah lagi dengan jumlah penduduk di provinsi Jawa Timur yang cukup banyak, maka hal ini akan berkaitan dengan kegiatan ekonomi di Jawa Barat. Kondisi PDRB Jawa Barat dari tahun 2012-2022 selalu mengalami peningkatan, tetapi dalam bidang ekspor dan impor secara keseluruhan tidak selalu mengalami peningkatan atau berada pada kondisi fluktuatif. Sehingga dapat dipastikan adanya faktor lain yang mempengaruhi PDRB Jawa Barat.</p>
+</section>
+<section id="ruang-lingkup" class="level3" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="ruang-lingkup"><span class="header-section-number">1.2</span> Ruang lingkup</h3>
+<p>Dalam penelitian ini penulis mengambil objek penelitian dari Badan Pusat Statistik Jawa Barat. Ruang lingkup penelitian ini terdapat 4 variabel,antara lain nilai ekspor keseluruhan provinsi Jawa Barat, nilai impor keseluruhan Jawa Barat, nilai Produk Domestik Regional Bruto Jawa Barat dan Nilai tukar Rupiah terhadap Dolar AS. Data yang digunakan adalah data yang bersifat time series yaitu dalam kurun waktu 2013-2022 dengan satuan yang telah diubah ke dalam USD guna untuk memudahkan penyetaraan mata uang secara internasional, data inilah yang kemudian menjadi objek penelitian.</p>
+</section>
+<section id="rumusan-masalah" class="level3" data-number="1.3">
+<h3 data-number="1.3" class="anchored" data-anchor-id="rumusan-masalah"><span class="header-section-number">1.3</span> Rumusan masalah</h3>
+<ol type="1">
+<li>Bagaimana pengaruh Ekspor dan Impor di Jawa Barat terhadap Produk Domestik Regional Bruto dalam kurun waktu 2012-2022?</li>
+<li>Apa Hubungan ekspor dan impor terhadap peningkatan PDRB di Jawa Barat?</li>
+</ol>
+</section>
+<section id="tujuan-dan-manfaat-penelitian" class="level3" data-number="1.4">
+<h3 data-number="1.4" class="anchored" data-anchor-id="tujuan-dan-manfaat-penelitian"><span class="header-section-number">1.4</span> Tujuan dan manfaat penelitian</h3>
+<p>Berdasarkan latar belakang dan permasalahan yang ada maka tujuan dari penelitian ini adalah untuk mengetahui pengaruh ekspor dan impor terhadap PDRB Jawa Barat dan mengetahui hubungan ekspor dan impor terhadap peningkatan PDRB Jawa Barat. Adapun manfaat dari penelitian ini antara lain:</p>
+<section id="manfaat-teoritis" class="level4" data-number="1.4.1">
+<h4 data-number="1.4.1" class="anchored" data-anchor-id="manfaat-teoritis"><span class="header-section-number">1.4.1</span> 1. Manfaat Teoritis</h4>
+<p>Penelitian ini diharapkan dapat memberikan bantuan pemikiran dan menjadi ilmu pengetahuan bagi para pembaca untuk menambah wawasan seputar ekonomi.</p>
+</section>
+<section id="manfaat-praktis" class="level4" data-number="1.4.2">
+<h4 data-number="1.4.2" class="anchored" data-anchor-id="manfaat-praktis"><span class="header-section-number">1.4.2</span> 2. Manfaat Praktis</h4>
+<section id="a.-bagi-penulis" class="level5" data-number="1.4.2.1">
+<h5 data-number="1.4.2.1" class="anchored" data-anchor-id="a.-bagi-penulis"><span class="header-section-number">1.4.2.1</span> a. Bagi Penulis</h5>
+<p>Diharapkan penelitian ini bisa menjadi referensi bagi mereka yang ingin memperdalam tentang kegiatan ekspor, impor, dan pertumbuhan ekonomi, sehingga dengan adanya karya lain secara tidak langsung penelitian ini mengalami penyempurnaan secara terus menerus. Dan diharapkan penelitian ini juga dapat menjadi referensi bagi setiap penulis yang ingin mengetahui penelitian menggunakan sistem regresi melalui R Studio.</p>
+</section>
+<section id="b.-bagi-instansi" class="level5" data-number="1.4.2.2">
+<h5 data-number="1.4.2.2" class="anchored" data-anchor-id="b.-bagi-instansi"><span class="header-section-number">1.4.2.2</span> b. Bagi instansi</h5>
+<p>Sebagai bahan masukan dan saran guna untuk memperbaiki sistem perekonomian khususnya di daerah Jawa Barat.</p>
+</section>
+</section>
+</section>
+<section id="package" class="level3" data-number="1.5">
+<h3 data-number="1.5" class="anchored" data-anchor-id="package"><span class="header-section-number">1.5</span> Package</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="st">"D:/METOPEL UAS/SHERLY METOPEL"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(kableExtra)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(WDI)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="studi-pustaka" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="studi-pustaka"><span class="header-section-number">2</span> Studi pustaka</h2>
+<p>Ekspor adalah kegiatan mengeluarkan barang dari daerah pabean. Menurut Lipsey (1995), ekspor dapat diartikan sebagai total penjualan barang yang dapat dihasilkan oleh suatu negara, kemudian diperdagangkan kepada negara lain dengan tujuan mendapatkan devisa. Suatu negara dapat mengekspor barang-barang yang dihasilkannya ke negara lain yang tidak dapat menghasilkan barang-barang yang dihasilkan negara pengekspor. Menurut Salvatore (1997), terdapat beberapa alasan sehingga dilakukannya ekspor oleh suatu negara, antara lain:</p>
+<ol type="a">
+<li><p>Keinginan untuk memenuhi berbagai kebutuhan yang tidak dapat dipenuhi dari produksi atau hasil dalam negeri, termasuk kebutuhan yang dapat diproduksi namun diperlukan biaya yang lebih tinggi dibandingkan jika diproduksi di luar negeri.</p></li>
+<li><p>Keinginan suatu negara untuk memperluas pemasaran komoditas domestik untuk meningkatkan sumber devisa bagi kegiatan pembangunan.</p></li>
+</ol>
+<p>Impor adalah kegiatan memasukan barang ke dalam daerah pabean. Impor bertindak sebaliknya daripada ekspor, saat ekspor dapat meningkatkan pendapatan nasional maka impor dapat menambah pengeluaran dan menurunkan pendapatan nasional suatu daerah. Menurut Sukirno (2011) aliran barang impor dapat menimbulkan aliran keluar atau bocoran dari aliran pengeluaran sektor rumah tangga ke sektor perusahaan yang pada akhirnya menurunkan pendapatan nasional yang mungkin dapat dicapai. Tetapi disatu sisi impor terdapat sisi baiknya yaitu membantu negara memenuhi kebutuhan dalam negeri apabila barang atau jasa yang diimpor tidak ada di negara atau daerah tersebut, hal ini selaras dengan yang dijelaskan dalam teori Hecksher-Ohlin (dalam Appleyeard, Field dan Cobb, 2008) menyatakan bahwa suatu negara akan mengimpor produk/barang yang menggunakan faktor produksi yang tidak atau jarang dimiliki oleh negara tersebut. Kegiatan ini akan menguntungkan bagi negara tersebut dibandingkan melakukan produksi sendiri namun tidak secara efisien.</p>
+<p>Pertumbuhan ekonomi dapat diartikan sebagai perkembangan kegiatan perekonomian yang menyebabkan barang dan jasa yang dihasilkan masyarakat meningkat (Sukirno, 2012). Salah satu indikator untuk melihat kondisi ekonomi suatu daerah adalah PDRB. PDRB pada dasarnya adalah jumlah nilai tambah yang dihasilkan oleh seluruh unit usaha dalam suatu negara tertentu, atau merupakan jumlah dari nilai barang dan jasa yang diproduksi oleh seluruh unit ekonomi. Sjafrizal (2008), menjelaskan bahwa PDRB merupakan penjumlahan dari konsumsi, investasi, pengeluaran pemerintah, dan ekspor, dikurangi impor.</p>
+</section>
+<section id="metode-penelitian" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="metode-penelitian"><span class="header-section-number">3</span> Metode penelitian</h2>
+<section id="data" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="data"><span class="header-section-number">3.1</span> Data</h3>
+<table class="table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Tahun</th>
+<th style="text-align: center;">ekspor</th>
+<th style="text-align: center;">impor</th>
+<th style="text-align: center;">kurs</th>
+<th style="text-align: center;">pdrb</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">2013</td>
+<td style="text-align: center;">$26.379.860.000,00</td>
+<td style="text-align: center;">$14.154.310.000,00</td>
+<td style="text-align: center;">Rp 12.189,00</td>
+<td style="text-align: center;">Rp 2.411.831.220.000,00</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2014</td>
+<td style="text-align: center;">$27.401.010.000,00</td>
+<td style="text-align: center;">$13.742.100.000,00</td>
+<td style="text-align: center;">Rp 12.440,00</td>
+<td style="text-align: center;">Rp 2.496.685.523.000,00</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2015</td>
+<td style="text-align: center;">$25.694.460.000,00</td>
+<td style="text-align: center;">$11.827.700.000,00</td>
+<td style="text-align: center;">Rp 13.795,00</td>
+<td style="text-align: center;">Rp 2.584.550.377.000,00</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2016</td>
+<td style="text-align: center;">$25.726.660.000,00</td>
+<td style="text-align: center;">$11.933.350.000,00</td>
+<td style="text-align: center;">Rp 13.436,00</td>
+<td style="text-align: center;">Rp 2.692.350.550.000,00</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2017</td>
+<td style="text-align: center;">$29.179.180.000,00</td>
+<td style="text-align: center;">$11.816.840.000,00</td>
+<td style="text-align: center;">Rp 13.555,00</td>
+<td style="text-align: center;">Rp 2.797.091.846.000,00</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2018</td>
+<td style="text-align: center;">$30.369.912.070,00</td>
+<td style="text-align: center;">$12.671.664.560,00</td>
+<td style="text-align: center;">Rp 14.390,00</td>
+<td style="text-align: center;">Rp 1.960.627.650.000,00</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2019</td>
+<td style="text-align: center;">$29.927.416.350,00</td>
+<td style="text-align: center;">$11.044.960.480,00</td>
+<td style="text-align: center;">Rp 13.866,00</td>
+<td style="text-align: center;">Rp 2.123.153.710.000,00</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2020</td>
+<td style="text-align: center;">$26.600.282.190,00</td>
+<td style="text-align: center;">$8.693.481.680,00</td>
+<td style="text-align: center;">Rp 14.050,00</td>
+<td style="text-align: center;">Rp 2.082.107.260.000,00</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2021</td>
+<td style="text-align: center;">$33.881.218.640,00</td>
+<td style="text-align: center;">$11.990.573.650,00</td>
+<td style="text-align: center;">Rp 14.269,00</td>
+<td style="text-align: center;">Rp 2.204.660.230.000,00</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2022</td>
+<td style="text-align: center;">$38.591.218.640,00</td>
+<td style="text-align: center;">$14.234.573.650,00</td>
+<td style="text-align: center;">Rp 15.289,00</td>
+<td style="text-align: center;">Rp 2.422.782.320.000,00</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="metode-analisis" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="metode-analisis"><span class="header-section-number">3.2</span> Metode analisis</h3>
+<p>Metode yang dipilih adalah regresi Multivariat dengan lebih dari satu variabel independen. Penelitian ini merbaksud mencari hubungan antara Ekspor (X1) Impor (Y) terhadap PDRB Jawa Barat (X2) yang juga di tambah dengan variabel nilai tukar (X3)</p>
+<p>Spesifikasi yang dilakukan adalah:</p>
+<p><span class="math display">\[
+Y=\beta_0 + \beta_1 X1+\beta_2 X2+\beta_3 X3.
+\]</span> di mana <span class="math inline">\(Y\)</span>= Nilai Impor, <span class="math inline">\(X1\)</span> = Nilai Ekspor ,<span class="math inline">\(X2\)</span>= PDRB Jawa Barat, <span class="math inline">\(X3\)</span>= Kurs/Nilai Tukar IDR/USD .</p>
+</section>
+</section>
+<section id="pembahasan" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="pembahasan"><span class="header-section-number">4</span> Pembahasan</h2>
+<section id="pembahasan-masalah" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="pembahasan-masalah"><span class="header-section-number">4.1</span> Pembahasan masalah</h3>
+<p>Pada bagian ini dapat ditampilkan data dan visualisasi data yang telah dikumpulkan.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#impor dataset</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="st">"D:/METOPEL UAS/SHERLY METOPEL"</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">read_excel</span>(<span class="st">"pdrb2.xlsx"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 10 × 5
+   Tahun      ekspor       impor  kurs          pdrb
+   &lt;dbl&gt;       &lt;dbl&gt;       &lt;dbl&gt; &lt;dbl&gt;         &lt;dbl&gt;
+ 1  2013 26379860000 14154310000 12189 2411831220000
+ 2  2014 27401010000 13742100000 12440 2496685523000
+ 3  2015 25694460000 11827700000 13795 2584550377000
+ 4  2016 25726660000 11933350000 13436 2692350550000
+ 5  2017 29179180000 11816840000 13555 2797091846000
+ 6  2018 30369912070 12671664560 14390 1960627650000
+ 7  2019 29927416350 11044960480 13866 2123153710000
+ 8  2020 26600282190  8693481680 14050 2082107260000
+ 9  2021 33881218640 11990573650 14269 2204660230000
+10  2022 38591218640 14234573650 15289 2422782320000</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"pdrb2.xlsx"</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">kbl</span>(dat) <span class="sc">%&gt;%</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_styling</span>(<span class="at">bootstrap_options =</span> <span class="fu">c</span>(<span class="st">"striped"</span>, <span class="st">"hover"</span>, <span class="st">"condensed"</span>, <span class="st">"responsive"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed table-sm small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: right;" data-quarto-table-cell-role="th">Tahun</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">ekspor</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">impor</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">kurs</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">pdrb</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">2013</td>
+<td style="text-align: right;">26379860000</td>
+<td style="text-align: right;">14154310000</td>
+<td style="text-align: right;">12189</td>
+<td style="text-align: right;">2.411831e+12</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2014</td>
+<td style="text-align: right;">27401010000</td>
+<td style="text-align: right;">13742100000</td>
+<td style="text-align: right;">12440</td>
+<td style="text-align: right;">2.496686e+12</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2015</td>
+<td style="text-align: right;">25694460000</td>
+<td style="text-align: right;">11827700000</td>
+<td style="text-align: right;">13795</td>
+<td style="text-align: right;">2.584550e+12</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2016</td>
+<td style="text-align: right;">25726660000</td>
+<td style="text-align: right;">11933350000</td>
+<td style="text-align: right;">13436</td>
+<td style="text-align: right;">2.692351e+12</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2017</td>
+<td style="text-align: right;">29179180000</td>
+<td style="text-align: right;">11816840000</td>
+<td style="text-align: right;">13555</td>
+<td style="text-align: right;">2.797092e+12</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2018</td>
+<td style="text-align: right;">30369912070</td>
+<td style="text-align: right;">12671664560</td>
+<td style="text-align: right;">14390</td>
+<td style="text-align: right;">1.960628e+12</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2019</td>
+<td style="text-align: right;">29927416350</td>
+<td style="text-align: right;">11044960480</td>
+<td style="text-align: right;">13866</td>
+<td style="text-align: right;">2.123154e+12</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2020</td>
+<td style="text-align: right;">26600282190</td>
+<td style="text-align: right;">8693481680</td>
+<td style="text-align: right;">14050</td>
+<td style="text-align: right;">2.082107e+12</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2021</td>
+<td style="text-align: right;">33881218640</td>
+<td style="text-align: right;">11990573650</td>
+<td style="text-align: right;">14269</td>
+<td style="text-align: right;">2.204660e+12</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2022</td>
+<td style="text-align: right;">38591218640</td>
+<td style="text-align: right;">14234573650</td>
+<td style="text-align: right;">15289</td>
+<td style="text-align: right;">2.422782e+12</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>reg1<span class="ot">&lt;-</span><span class="fu">lm</span>(impor<span class="sc">~</span>ekspor<span class="sc">+</span>pdrb<span class="sc">+</span>kurs,<span class="at">data=</span>dat)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>dat<span class="sc">$</span>m<span class="ot">&lt;-</span><span class="fu">resid</span>(reg1)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(dat<span class="sc">$</span>ekspor,dat<span class="sc">$</span>m,<span class="at">xlab=</span><span class="st">"Nilai FOB Ekspor"</span>,<span class="at">ylab=</span><span class="st">"error"</span>)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h=</span><span class="dv">0</span>) <span class="co"># membuat garis horizontal di y=0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>dat<span class="sc">$</span>m<span class="ot">&lt;-</span><span class="fu">resid</span>(reg1)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(dat<span class="sc">$</span>impor,dat<span class="sc">$</span>m,<span class="at">xlab=</span><span class="st">"Nilai FOB Impor"</span>,<span class="at">ylab=</span><span class="st">"error"</span>)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h=</span><span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>dat<span class="sc">$</span>m<span class="ot">&lt;-</span><span class="fu">resid</span>(reg1)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(dat<span class="sc">$</span>pdrb,dat<span class="sc">$</span>m,<span class="at">xlab=</span><span class="st">"Nilai PDRB Jawa Barat"</span>,<span class="at">ylab=</span><span class="st">"error"</span>)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h=</span><span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>dat<span class="sc">$</span>m<span class="ot">&lt;-</span><span class="fu">resid</span>(reg1)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(dat<span class="sc">$</span>kurs,dat<span class="sc">$</span>m,<span class="at">xlab=</span><span class="st">"Nilai Tukar IDR/USD"</span>,<span class="at">ylab=</span><span class="st">"error"</span>)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h=</span><span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="analisis-masalah" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="analisis-masalah"><span class="header-section-number">4.2</span> Analisis masalah</h3>
+<p>Hasil regresinya adalah</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>reg1<span class="ot">&lt;-</span><span class="fu">lm</span>(impor<span class="sc">~</span>ekspor<span class="sc">+</span>pdrb<span class="sc">+</span>kurs,<span class="at">data=</span>dat)</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(reg1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = impor ~ ekspor + pdrb + kurs, data = dat)
+
+Residuals:
+       Min         1Q     Median         3Q        Max 
+-1.451e+09 -9.455e+08  2.295e+08  6.627e+08  1.675e+09 
+
+Coefficients:
+              Estimate Std. Error t value Pr(&gt;|t|)  
+(Intercept)  1.888e+10  9.387e+09   2.011   0.0910 .
+ekspor       4.142e-01  1.509e-01   2.746   0.0335 *
+pdrb         1.351e-03  1.644e-03   0.822   0.4425  
+kurs        -1.606e+06  7.113e+05  -2.258   0.0647 .
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 1.281e+09 on 6 degrees of freedom
+Multiple R-squared:  0.5995,    Adjusted R-squared:  0.3992 
+F-statistic: 2.993 on 3 and 6 DF,  p-value: 0.1174</code></pre>
+</div>
+</div>
+<p>Dari hasil regresi yang di tampilkan, dimana R-squared menunjukan hasil 0.5995, yang artinya angka tersebut mengandung makna bahwa X1, X2,dan X3 secara simultan berpengaruh terhadap Y sebesar 59,95%. Sedangkan 40,05% sisanya dipengaruhi oleh variabel lain di luar persamaan ini.</p>
+<p>Kemudian, besaran nilai yang tertera pada Ekspor keseluruhan, dapat diartikan sebagai setiap nilai ekspor naik 1 akan membuat nilai impor ikut naik sebesar 4,142 , berpengaruh cukup signifikan.</p>
+<p>Variabel pdrb juga menunjukan pengaruh positif walaupun tidak signifikan, dimana setiap kenaikan PDRB Jawa Barat sebesar 1 juga akan meningkatkan nilai impor sebesar 1,531.</p>
+<p>Terakhir pada variabel nilai tukar, menunjukan hasil negatif signifikan, dimana setiap kenaikan kurs sebesar 1 akan mengakibatkan nilai impor turun sebersar -1,606.</p>
+</section>
+</section>
+<section id="kesimpulan" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="kesimpulan"><span class="header-section-number">5</span> Kesimpulan</h2>
+<p>Kesimpulan dari analisis ini adalah nilai PDRB Jawa Barat banyak di pengaruhi oleh berbagai faktor, yang ini dapat kita lihat dimana hasil regresi di atas masih menyisakan sekitar 40% kemungkinan analisis membutuhkan variabel lain untuk dapat menjelaskan masalah PDRB di Jawa Barat ini.</p>
+<p>Kemudian, melihat hasil regresi antara impor dengan ekspor yang positif signifikan dapat diartikan bahwa terjadi sebuah fenomena konsumtif yang masih dilakukan oleh masyarakat Indonesia khususnya Jawa Barat, dimana jumlah impor meningkat 4,1 poin lebih banyak dibandigkan ekspor.</p>
+<p>Hal ini diperjelas dengan setiap peningkatan PDRB Jawa Barat juga memberikan dampak yang positif terhadap nilai Impor, atau setiap pendapatan naik masyarakat Jawa Barat cenderung banyak melakukan pembelian daripada menjual/memproduksi sesuatu.</p>
+<p>Terakhir untuk kurs/nilai tukar barulah pada variabel ini menunjukan hasil negatif, yang artinya saat mata uang rupiah sedang melemah kita tentu akan membayar lebih mahal saat hendak membeli/mengimpor sesuatu dengan jenis dan kuantitas yang sama dibandingkan sebelumnya sehingga kita cenderung menahan pembelian/belanja sesuatu dalam keadaan kurs yang sedang melemah.</p>
+</section>
+<section id="referensi" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="referensi"><span class="header-section-number">6</span> Referensi</h2>
+<p>Affandi, A., &amp; Gunawan, E. (2018). PENGARUH EKSPOR, IMPOR DAN JUMLAH PENDUDUK TERHADAP PDB INDONESIA TAHUN 1969 -2016. Jurnal Perspektif Ekonomi Darussalam (Darussalam Journal of Economic Perspec, 4(2), Article 2. https://doi.org/10.21157/j.ked.hewan.v%vi%i.13021</p>
+<p>Nofinawati, N., Lubis, N. I., &amp; Nasution, J. (2017). PENGARUH EKSPOR DAN IMPOR TERHADAP PRODUK DOMESTIK REGIONAL BRUTO (PDRB) PROVINSI SUMATERA UTARA TAHUN 2008-2015. Al-Masharif: Jurnal Ilmu Ekonomi Dan Keislaman, 5(1), Article1. https://doi.org/10.24952/masharif.v5i1.1415</p>
+<p>Hodijah, S., &amp; Angelina, G. P. (2021). ANALISIS PENGARUH EKSPOR DAN IMPOR TERHADAP PERTUMBUHAN EKONOMI DI INDONESIA. Jurnal Manajemen Terapan Dan Keuangan, 10(01), Article 01. https://doi.org/10.22437/jmk.v10i01.12512.</p>
+<p>HF Naionggolan. (2023). PENGARUH EKSPOR IMPOR TERHADAP PDRB PROVINSI JAWA BARAT 2017-2021. Jurnal Economina, 02(02), https://ejournal.45mataram.ac.id/index.php/economina/article/view/309</p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
